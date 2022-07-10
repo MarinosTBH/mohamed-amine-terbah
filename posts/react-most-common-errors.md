@@ -17,7 +17,14 @@ In this post, we will go over some of the most common React error messages and m
 Alright list some of them : 
 
 - [Warning: Each child in a list should have a unique key prop.](https://sentry.io/answers/unique-key-prop/)
-- 
+|&nbsp; When creating a list in the UI from an array with JSX, you should add a key prop to each child and to any of its’ children, for example : [el, el, el].map(e=><div key={e.id}>{e}</div>).
+|&nbsp; React uses the key prop create a relationship between the component and the DOM element. The library uses this relationship to determine whether or not the component should be re-rendered.
+
+|&nbsp; It is not recommended to use the index of the array as the key prop if you know the array will not be static. If the key is an index, reordering an item in the array changes it. Then React will get confused and re-render the incorrect element.
+
+|&nbsp; Keys do not have to be unique globally. They just need to be unique across sibling elements.
+
+
 
 - [Adjacent JSX elements must be wrapped in an enclosing tag](https://stackoverflow.com/questions/31284169/parse-error-adjacent-jsx-elements-must-be-wrapped-in-an-enclosing-tag).
 
