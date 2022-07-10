@@ -17,8 +17,7 @@ In this post, we will go over some of the most common React error messages and m
 Alright list some of them : 
 
 - [Warning: Each child in a list should have a unique key prop.](https://sentry.io/answers/unique-key-prop/)
-- [Warning: Each child in a list should have a unique key prop.](https://sentry.io/answers/unique-key-prop/)
-
+- 
 
 - [Adjacent JSX elements must be wrapped in an enclosing tag](https://stackoverflow.com/questions/31284169/parse-error-adjacent-jsx-elements-must-be-wrapped-in-an-enclosing-tag).
 
