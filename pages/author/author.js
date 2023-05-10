@@ -11,13 +11,13 @@ export default function Author() {
                     <meta name="description" content="Mohamed Amine TERBAH." />
                     <meta property="og:title" content="MarinosTBH" />
                     <meta property="og:description" content="Read the latest posts about Next.js rendering and React errors on My Next.js Blog." />
-                    <meta property="og:image" content="https://example.com/my-nextjs-blog-thumbnail.jpg" />
+                    <meta property="og:image" content="https://mat-dev-blog-nextjs.vercel.app/my-nextjs-blog-thumbnail.jpg" />
                     <meta property="og:type" content="website" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content="Blog about development with nextjs and react" />
                     <meta name="twitter:description" content="Read the latest posts about Next.js rendering and React errors on My Next.js Blog." />
-                    <meta name="twitter:image" content="https://example.com/my-nextjs-blog-thumbnail.jpg" />
-                    <link rel="canonical" href="https://example.com/" />
+                    <meta name="twitter:image" content="https://mat-dev-blog-nextjs.vercel.app/my-nextjs-blog-thumbnail.jpg" />
+                    <link rel="canonical" href="https://mat-dev-blog-nextjs.vercel.app/" />
             </Head>
             <main>
                 <h1>About me</h1>
