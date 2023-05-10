@@ -16,7 +16,7 @@ In this post, we will go over some of the most common React error messages and m
 
 Alright list some of them : 
 
-- [Warning: Each child in a list should have a unique key prop.](https://sentry.io/answers/unique-key-prop/)
+- [Warning: Each child in a list should have a unique key prop.](https://sentry.io/answers/unique-key-prop/) (Actually this is a warning not an error but it is famous)
 
 &nbsp;&nbsp;When creating a list in the UI from an array with JSX, you should add a key prop to each child and to any of its’ children, for example : [el, el, el].map(e=><div key={e.id}>{e}</div>).
 &nbsp;&nbsp;&nbsp;React uses the key prop create a relationship between the component and the DOM element. The library uses this relationship to determine whether or not the component should be re-rendered.
