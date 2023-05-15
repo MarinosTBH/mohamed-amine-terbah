@@ -6,6 +6,10 @@ import utilStyles from '../../styles/utils.module.css';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
+import Image from 'next/image';
+import CodeBlock from '../../components/CodeBlock';
+import ChapterTwo from '../../components/ChapterTwo';
+
 export default function Post({ postData }) {
   const router = useRouter()
   const currentPath = router.asPath.split('/')[2];
@@ -13,7 +17,8 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
-        <meta name="description" content="Read the latest posts about Next.js rendering and React errors on My Next.js Blog." />
+
+        <meta name="description" content={postData.title} />
         <meta property="og:title" content="My Next.js Blog" />
         <meta property="og:description" content="Read the latest posts about Next.js rendering and React errors on My Next.js Blog." />
         <meta property="og:image" content="https://mat-dev-blog-nextjs.vercel.app/my-nextjs-blog-thumbnail.jpg" />
@@ -33,9 +38,13 @@ export default function Post({ postData }) {
       </article>
       {currentPath === 'web-development-presentation' && <p>Here is a pdf presentation of web development :
         {' '}
-        <Link href="/webDevPresentation.pdf" download 
+
+        <Link href="/webDevPresentation.pdf" download
         ><a>Link to PDF</a></Link>
       </p>}
+      {currentPath === 'git-tutorial' &&
+      <ChapterTwo title={postData.title}/>
+        }
     </Layout>
   );
 }

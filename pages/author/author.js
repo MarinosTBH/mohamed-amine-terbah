@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../../components/layout';
 import utilStyles from '../../styles/utils.module.css';
+import Image from 'next/image';
 
 export default function Author() {
     return (
@@ -35,10 +36,10 @@ export default function Author() {
                 <h1>Contact</h1>
                 <div className={utilStyles.conatct}>
                     <Link href="https://linkedin.com/in/m-a-t">
-                        <a><img src="https://www.svgrepo.com/show/922/linkedin.svg" intrinsicsize="50 x 50" width="50" height="50" srcset="https://www.svgrepo.com/show/922/linkedin.svg 4x" alt="Linkedin SVG Vector" title="Linkedin SVG Vector" /></a>
+                        <a><Image src="https://www.svgrepo.com/show/922/linkedin.svg" intrinsicsize="50 x 50" width="50" height="50" srcset="https://www.svgrepo.com/show/922/linkedin.svg 4x" alt="Linkedin SVG Vector" title="Linkedin SVG Vector" /></a>
                     </Link>
                     <Link href="https://github.com/MarinosTBH">
-                        <a><img src="https://www.svgrepo.com/show/35001/github.svg" intrinsicsize="50 x 50" width="50" height="50" srcset="https://www.svgrepo.com/show/922/github.svg 4x" alt="github SVG Vector" title="github SVG Vector" /></a>
+                        <a><Image src="https://www.svgrepo.com/show/35001/github.svg" intrinsicsize="50 x 50" width="50" height="50" srcset="https://www.svgrepo.com/show/922/github.svg 4x" alt="github SVG Vector" title="github SVG Vector" /></a>
                     </Link>
                 </div>
             </main>

@@ -13,3 +13,44 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+.contact {
+  margin-bottom: 20px;
+}
+.contact h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.contact ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.contact ul li i {
+  margin-right: 5px;
+}
+.contact ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.contact ul li a:hover {
+  text-decoration: underline;
+}
+.list {
+  list-style: none;
+  display: inline-flex;
+}
+.listItem{
+  padding-right: 10px ;
+  padding-left: 10px ;
+}
