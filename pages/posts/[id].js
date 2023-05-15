@@ -6,6 +6,10 @@ import utilStyles from '../../styles/utils.module.css';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
+import Image from 'next/image';
+import CodeBlock from '../../components/CodeBlock';
+import ChapterTwo from '../../components/ChapterTwo';
+
 export default function Post({ postData }) {
   const router = useRouter()
   const currentPath = router.asPath.split('/')[2];
