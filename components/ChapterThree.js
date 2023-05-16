@@ -1,10 +1,8 @@
 import React from 'react'
-import CodeBlock from './CodeBlock'
-import Image from 'next/image'
-import styles from "../components/layout.module.css"
 const ChapterThree = () => {
 
-    const htmlCode = `<html lang="en">
+    const htmlContent = `
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,23 +72,21 @@ const ChapterThree = () => {
         <hr> 
     
         <footer>
-            <h2>Resume</h2>
-        <p class="title">We are going to make a clone of GOMYCODE website.
-            Here's the link : <a href="GOMYCODEClone.html">GOMYCODE Clone</a> 
-        </p>
+            <h2>Thanks</h2>
         </footer>
     </body>
     </html>`
-
     return (
         <div>
             <h2>HTML Example with most used Tags</h2>
             <iframe
-                src="/api/getEmbeddedHtml"
+                srcDoc={htmlContent}
                 title="Embedded HTML"
                 width="100%"
                 height="500px" />
-            <a href="https://github.com/MarinosTBH/Chapter_03_Checkpoint_HTML_29-03-22-/blob/dev/Index_1.html"
+            <a
+                // href="https://github.com/MarinosTBH/Chapter_03_Checkpoint_HTML_29-03-22-/blob/dev/Index_1.html"
+                href="index.html"
                 target="_blank"
                 rel='noopener noreferer'>
                 Source code</a>
