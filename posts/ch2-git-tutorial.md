@@ -1,6 +1,6 @@
 ---
 title: 'Chapter 2 : Git Tutorial'
-date: '2022-04-06'
+date: '2022-03-29'
 ---
 
 **Git** is a **version control system** that allows you to keep track of **changes** in your code over time. It's like a **time machine** for your code! With Git, you can collaborate with others, experiment with new features without worrying about **breaking things**, and easily roll back to a **previous version** if something goes wrong.
