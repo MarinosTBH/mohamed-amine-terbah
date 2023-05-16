@@ -1,6 +1,6 @@
 ---
 title: 'The most common errors in React'
-date: '2022-06-28'
+date: '2022-02-28'
 ---
 
 **Errors**, those annoying messages that comes to you whenever you are expecting some successful results.

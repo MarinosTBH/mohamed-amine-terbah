@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CodeBlock from '../../components/CodeBlock';
 import ChapterTwo from '../../components/ChapterTwo';
+import ChapterThree from '../../components/ChapterThree';
 
 export default function Post({ postData }) {
   const router = useRouter()
@@ -36,15 +37,17 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      {currentPath === 'web-development-presentation' && <p>Here is a pdf presentation of web development :
+      {currentPath === 'ch1-web-development-presentation' && <p>Here is a pdf presentation of web development :
         {' '}
-
         <Link href="/webDevPresentation.pdf" download
         ><a>Link to PDF</a></Link>
       </p>}
-      {currentPath === 'git-tutorial' &&
-      <ChapterTwo title={postData.title}/>
-        }
+      {currentPath === 'ch2-git-tutorial' &&
+        <ChapterTwo title={postData.title} />
+      }
+      {currentPath === 'ch3-HTML' &&
+        <ChapterThree/>
+      }
     </Layout>
   );
 }
