@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mat-dev-blog-nextjs.vercel.app/
+
+# Sitemaps
+Sitemap: https://mat-dev-blog-nextjs.vercel.app/sitemap.xml
+Sitemap: https://mat-dev-blog-nextjs.vercel.app/sitemap-blog.xml

@@ -54,3 +54,15 @@
   padding-right: 10px ;
   padding-left: 10px ;
 }
+.vscodeTheme {
+  background-color: #000000;
+  color: #0f0f0f;
+  padding: 0;
+  line-height: 0;
+}
+
+.languageHtml {
+  color: #080808;
+  font-size: 10px;
+}
+
