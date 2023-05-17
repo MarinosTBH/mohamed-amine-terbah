@@ -1,15 +1,15 @@
-import Date from '../../components/date';
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import Date from '../../../components/date';
+import Layout from '../../../components/layout'
+import { getAllPostIds, getPostData } from '../../../lib/posts'
 import Head from 'next/head';
-import utilStyles from '../../styles/utils.module.css';
+import utilStyles from '../../../styles/utils.module.css';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-import Image from 'next/image';
-import CodeBlock from '../../components/CodeBlock';
-import ChapterTwo from '../../components/ChapterTwo';
-import ChapterThree from '../../components/ChapterThree';
+import ChapterTwo from '../../../components/ChapterTwo';
+import ChapterThree from '../../../components/ChapterThree';
+import ChapterFour from '../../../components/ChapterFour';
+
 
 export default function Post({ postData }) {
   const router = useRouter()
@@ -46,7 +46,10 @@ export default function Post({ postData }) {
         <ChapterTwo title={postData.title} />
       }
       {currentPath === 'ch3-HTML' &&
-        <ChapterThree/>
+        <ChapterThree />
+      }
+      {currentPath === 'ch4-CSS' &&
+        <ChapterFour />
       }
     </Layout>
   );

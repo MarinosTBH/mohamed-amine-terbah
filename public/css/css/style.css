@@ -1,0 +1,85 @@
+body{
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+}
+header{
+    background: rgb(204, 199, 199);
+    height: 110px;
+    padding: 2px;
+    margin: -8;
+    border-bottom: 2px solid grey;
+}
+
+#myname:hover{
+    background-color: rgb(170, 166, 173);
+}
+#myname{
+    font-size:  50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
+    transition: background-size .2s;
+}
+div{
+    background-color: rgba(206, 205, 205, 0.24);
+}
+#div1{
+    height: 110px;
+    border-bottom: 2px solid grey;
+    margin: -8;
+}
+#div2{
+    height: auto;
+    width:auto;
+    border-bottom: 2px solid grey;
+    margin-left: -48;
+    margin-right: -50px;
+    padding-bottom: 20px;
+}
+
+#div3{
+    height: auto;
+    width:auto;
+    border-bottom: 2px solid grey;
+    margin-left: -5;
+    margin-right: -10px;
+    
+}
+footer{
+    background: rgb(204, 199, 199);
+    height: 110px;
+    padding: 2px;
+    border-top: 2px solid grey;
+    margin-top: 10px;
+    margin-left: -6px;
+
+}
+h2{
+    font-style: italic;
+}
+.text{
+    font-weight:normal;
+}
+.title{
+    font-weight: bold;
+}
+label, input, textarea, button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+    padding: 5px;
+}
+input{
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 5px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: blueviolet;
+}
