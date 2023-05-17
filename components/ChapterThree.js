@@ -85,8 +85,7 @@ const ChapterThree = () => {
                 width="100%"
                 height="500px" />
             <a
-                // href="https://github.com/MarinosTBH/Chapter_03_Checkpoint_HTML_29-03-22-/blob/dev/Index_1.html"
-                href="index.html"
+                href="https://github.com/MarinosTBH/Chapter_03_Checkpoint_HTML_29-03-22-/blob/dev/Index_1.html"
                 target="_blank"
                 rel='noopener noreferer'>
                 Source code</a>
