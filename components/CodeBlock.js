@@ -1,10 +1,10 @@
 import React from 'react'
 
-const CodeBlock = ({ message }) => {
+const CodeBlock = ({ message, iSCss }) => {
   return (
     <pre style={{ backgroundColor: "black", color: "white", padding: "5px", marginTop: "5px", fontSize:"15px"}}>
     <code>
-      $ {message}
+    {iSCss && "$ "}{message}
     </code>
   </pre>
   )
