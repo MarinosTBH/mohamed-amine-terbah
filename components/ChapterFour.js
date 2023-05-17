@@ -156,7 +156,7 @@ const ChapterFour = () => {
         <footer>
             <section><h2 id="Work">Work</h2></section>
         <p class="title">We are going to make a clone of GOMYCODE website.
-            Here's the link : <a href="https://mat-dev-blog-nextjs.vercel.app/posts/ch4-CSS/css-checkpoint" target="_parent">GOMYCODE Clone</a> 
+            Here's the link : <a href="/posts/ch4-CSS/css-checkpoint" target="_top">GOMYCODE Clone</a> 
         </p>
         </footer>
     </body>
@@ -175,7 +175,7 @@ const ChapterFour = () => {
                 height="500px"
             />
             <a
-                href="https://github.com/MarinosTBH/Chapter_03_Checkpoint_HTML_29-03-22-/blob/dev/Index_1.html"
+                href="https://github.com/MarinosTBH/Chapter_04_Css_4_04_2022/"
                 target="_blank"
                 rel='noopener noreferer'>
                 Source code</a>
