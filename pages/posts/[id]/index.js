@@ -9,6 +9,7 @@ import Link from 'next/link';
 import ChapterTwo from '../../../components/ChapterTwo';
 import ChapterThree from '../../../components/ChapterThree';
 import ChapterFour from '../../../components/ChapterFour';
+import ChapterFive from '../../../components/ChapterFive';
 
 
 export default function Post({ postData }) {
@@ -20,13 +21,13 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
 
         <meta name="description" content={postData.title} />
-        <meta property="og:title" content="My Next.js Blog" />
-        <meta property="og:description" content="Read the latest posts about Next.js rendering and React errors on My Next.js Blog." />
+        <meta property="og:title" content="Mohamed Amine Terbah Blog" />
+        <meta property="og:description" content="Html, Css Javascript and React learning with all gomycode checkpoints." />
         <meta property="og:image" content="https://mat-dev-blog-nextjs.vercel.app/my-nextjs-blog-thumbnail.jpg" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="Gomycode blog" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="My Next.js Blog" />
-        <meta name="twitter:description" content="Read the latest posts about Next.js rendering and React errors on My Next.js Blog." />
+        <meta name="twitter:title" content="Gomycode checkpints" />
+        <meta name="twitter:description" content="Html, Css Javascript and React learning with all gomycode checkpoints." />
         <meta name="twitter:image" content="https://mat-dev-blog-nextjs.vercel.app/my-nextjs-blog-thumbnail.jpg" />
         <link rel="canonical" href="https://mat-dev-blog-nextjs.vercel.app/" />
       </Head>
@@ -37,19 +38,22 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      {currentPath === 'ch1-web-development-presentation' && <p>Here is a pdf presentation of web development :
+      {currentPath === 'Chapter-1-Web-Development-Presentation' && <p>Here is a pdf presentation of web development :
         {' '}
         <Link href="/webDevPresentation.pdf" download
         ><a>Link to PDF</a></Link>
       </p>}
-      {currentPath === 'ch2-git-tutorial' &&
+      {currentPath === 'Chapter-2-git-checkpoint' &&
         <ChapterTwo title={postData.title} />
       }
-      {currentPath === 'ch3-HTML' &&
+      {currentPath === 'Chapter-3-HTML' &&
         <ChapterThree />
       }
-      {currentPath === 'ch4-CSS' &&
+      {currentPath === 'Chapter-4-CSS' &&
         <ChapterFour />
+      }
+      {currentPath === 'Chapter-5-CSS-Layout' &&
+        <ChapterFive />
       }
     </Layout>
   );
