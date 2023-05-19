@@ -7,10 +7,12 @@
     "export": "next export && next-sitemap"
   },
   "dependencies": {
+    "canvas": "^2.11.2",
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "file-loader": "^6.2.0",
     "gray-matter": "^4.0.3",
+    "html-to-image": "^1.11.11",
     "next": "latest",
     "next-sitemap": "^4.0.9",
     "react": "17.0.2",

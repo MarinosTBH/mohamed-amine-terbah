@@ -156,7 +156,7 @@ const ChapterFour = () => {
         <footer>
             <section><h2 id="Work">Work</h2></section>
         <p class="title">We are going to make a clone of GOMYCODE website.
-            Here's the link : <a href="/posts/ch4-CSS/css-checkpoint" target="_top">GOMYCODE Clone</a> 
+            Here's the link : <a href="/posts/Chapter-4-CSS/css-checkpoint" target="_top">GOMYCODE Clone</a> 
         </p>
         </footer>
     </body>

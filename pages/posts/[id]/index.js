@@ -23,12 +23,12 @@ export default function Post({ postData }) {
         <meta name="description" content={postData.title} />
         <meta property="og:title" content="Mohamed Amine Terbah Blog" />
         <meta property="og:description" content="Html, Css Javascript and React learning with all gomycode checkpoints." />
-        <meta property="og:image" content="https://mat-dev-blog-nextjs.vercel.app/my-nextjs-blog-thumbnail.jpg" />
+        <meta property="og:image" content="https://mat-dev-blog-nextjs-1rg2mrdtc-marinostbh.vercel.app/thumbnail-mohamed-amine-terbah-marinosTBH-gomycode.svg" />
         <meta property="og:type" content="Gomycode blog" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Gomycode checkpints" />
         <meta name="twitter:description" content="Html, Css Javascript and React learning with all gomycode checkpoints." />
-        <meta name="twitter:image" content="https://mat-dev-blog-nextjs.vercel.app/my-nextjs-blog-thumbnail.jpg" />
+        <meta name="twitter:image" content="https://mat-dev-blog-nextjs-1rg2mrdtc-marinostbh.vercel.app/thumbnail-mohamed-amine-terbah-marinosTBH-gomycode.svg" />
         <link rel="canonical" href="https://mat-dev-blog-nextjs.vercel.app/" />
       </Head>
       <article>
