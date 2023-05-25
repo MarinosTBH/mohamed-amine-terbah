@@ -3,28 +3,41 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { useRef } from 'react'
+import Footer from './footer'
+import { Nav } from './nav'
 
 const name = 'Med Amine TERBAH'
 export const siteTitle = 'MAT Dev Blog'
-
 export default function Layout({ children, home }) {
+
+  const bottomRef = useRef(null)
+
+  const scrollToBottom = () => {
+    bottomRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (<>
+    <Head>
+      <link rel="icon" href="/favicon.ico" />
+      <meta
+        name="description"
+        content="Learn how to build a personal website using Next.js"
+      />
+      <meta
+        property="og:image"
+        content={`https://og-image.vercel.app/${encodeURI(
+          siteTitle
+        )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+      />
+      <meta name="og:title" content={siteTitle} />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Head>
+    <Nav
+      styles={styles}
+      onClick={scrollToBottom}
+    />
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
       <header className={styles.header}>
         {home ? (
           <>
@@ -70,29 +83,11 @@ export default function Layout({ children, home }) {
       )}
 
     </div>
-    <footer className={styles.footer}>
-      <div className="contact">
-        <ul className={styles.list}>
-          <li className={styles.listItem}><i ></i>Tunisia</li>
-          <li><i ></i><a href="mailto:hamma-terbah@live.fr">hamma-terbah@live.fr</a></li>
-          <li className={styles.listItem}>
-            <a href="https://www.linkedin.com/in/m-a-t" target="_blank" rel="noopener noreferrer">
-              <img src="https://blog.waalaxy.com/wp-content/uploads/2021/01/index.png" width={30}></img>
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a href="https://github.com/MarinosTBH/" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width={33} style={{ marginTop: 0 }}></img>
-            </a>
-          </li>
-          <li className={styles.listItem}>
-            <a href="https://www.facebook.com/med.terbah.3" target="_blank" rel="noopener noreferrer">
-              <img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" width={60} style={{ marginTop: 0 }}  ></img>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <Footer
+      styles={styles}
+      bottomRef={bottomRef}
+    />
+
   </>
   )
 }
