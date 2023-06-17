@@ -1,5 +1,5 @@
 ---
-title: "Chapter 6 : Javascript (Not a of Java plz)"
+title: "Chapter 6 : Javascript (Javascript is Not Java )"
 date: "2022-04-25"
 ---
 
