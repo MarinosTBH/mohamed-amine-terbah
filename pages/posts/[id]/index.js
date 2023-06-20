@@ -10,6 +10,7 @@ import ChapterTwo from "../../../components/ChapterTwo";
 import ChapterThree from "../../../components/ChapterThree";
 import ChapterFour from "../../../components/ChapterFour";
 import ChapterFive from "../../../components/ChapterFive";
+import ChapterEight from "../../../components/ChapterEight";
 
 export default function Post({ postData }) {
   const router = useRouter();
@@ -63,6 +64,7 @@ export default function Post({ postData }) {
       {currentPath === "Chapter-3-HTML" && <ChapterThree />}
       {currentPath === "Chapter-4-CSS" && <ChapterFour />}
       {currentPath === "Chapter-5-CSS-Layout" && <ChapterFive />}
+      {currentPath === "Chapter-8-Algorithms" && <ChapterEight />}
     </Layout>
   );
 }
