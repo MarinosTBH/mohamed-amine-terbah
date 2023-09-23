@@ -7,7 +7,7 @@ import { useRef } from 'react'
 import Footer from './footer'
 import { Nav } from './nav'
 
-const name = 'Med Amine TERBAH'
+const name = 'Med '
 export const siteTitle = 'MAT Dev Blog'
 export default function Layout({ children, home }) {
 

@@ -21,7 +21,7 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
 
         <meta name="description" content={postData.title} />
-        <meta property="og:title" content="Mohamed Amine Terbah Blog" />
+        <meta property="og:title" content=" " />
         <meta
           property="og:description"
           content="Html, Css Javascript and React learning with all gomycode checkpoints."

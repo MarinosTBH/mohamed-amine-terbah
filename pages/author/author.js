@@ -8,7 +8,7 @@ export default function Author() {
         <Layout author >
             <Head>
                     <title>Author</title>
-                    <meta name="description" content="Mohamed Amine TERBAH." />
+                    <meta name="description" content=" ." />
                     <meta property="og:title" content="MarinosTBH" />
                     <meta property="og:description" content="Read the latest posts about Next.js rendering and React errors on My Next.js Blog." />
                     <meta property="og:image" content="https://mat-dev-blog-nextjs-1rg2mrdtc-marinostbh.vercel.app/thumbnail-mohamed-amine-terbah-marinosTBH-gomycode.svg" />
