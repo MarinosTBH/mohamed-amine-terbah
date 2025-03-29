@@ -1,11 +1,11 @@
 module.exports = {
-    siteUrl: 'https://mat-dev-blog-nextjs.vercel.app/',
+    siteUrl: 'https://m-a-t.me/',
     generateRobotsTxt: true,
     changefreq: 'weekly',
     priority: 0.8,
     exclude: ['/admin'],
     sitemapSize: 5000,
-    outDir: './public',
+    outDir: 'out',
     robotsTxtOptions: {
         policies: [
             {
@@ -14,7 +14,7 @@ module.exports = {
             },
         ],
         additionalSitemaps: [
-            'https://mat-dev-blog-nextjs.vercel.app/sitemap-blog.xml',
+            'https://m-a-t.me/sitemap-blog.xml',
         ],
     },
     /* other options */

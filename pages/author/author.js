@@ -35,10 +35,10 @@ export default function Author() {
                 <h1>Contact</h1>
                 <div className={utilStyles.contact}>
                     <Link href="https://linkedin.com/in/m-a-t">
-                        <a><img src="https://www.svgrepo.com/show/922/linkedin.svg" intrinsicsize="50 x 50" width="50" height="50" srcSet="https://www.svgrepo.com/show/922/linkedin.svg 4x" alt="Linkedin SVG Vector" title="Linkedin SVG Vector" /></a>
+                        <img src="https://www.svgrepo.com/show/922/linkedin.svg" intrinsicsize="50 x 50" width="50" height="50" srcSet="https://www.svgrepo.com/show/922/linkedin.svg 4x" alt="Linkedin SVG Vector" title="Linkedin SVG Vector" />
                     </Link>
                     <Link href="https://github.com/MarinosTBH">
-                        <a><img src="/github.png" intrinsicsize="50 x 50" width="50" height="50" alt="github SVG Vector" title="github SVG Vector" /></a>
+                        <img src="/github.png" intrinsicsize="50 x 50" width="50" height="50" alt="github SVG Vector" title="github SVG Vector" />
                     </Link>
                 </div>
             </main>

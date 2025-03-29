@@ -54,7 +54,7 @@ export default function Post({ postData }) {
         <p>
           Here is a pdf presentation of web development :{" "}
           <Link href="/webDevPresentation.pdf" download>
-            <a>Link to PDF</a>
+            Link to PDF
           </Link>
         </p>
       )}

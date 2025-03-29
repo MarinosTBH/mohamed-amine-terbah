@@ -7,8 +7,8 @@ import { useRef } from 'react'
 import Footer from './footer'
 import { Nav } from './nav'
 
-const name = 'Med '
-export const siteTitle = 'MAT Dev Blog'
+const name = 'Marinos Terbah'
+export const siteTitle = 'Marinos Terbah'
 export default function Layout({ children, home }) {
 
   const bottomRef = useRef(null)
@@ -22,7 +22,7 @@ export default function Layout({ children, home }) {
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="Learn how to build a personal website using Next.js"
+        content="Your Favourite Tech News Here!"
       />
       <meta
         property="og:image"
@@ -54,7 +54,6 @@ export default function Layout({ children, home }) {
         ) : (
           <>
             <Link href="/">
-              <a>
                 <Image
                   priority
                   src="/images/profile.jpg"
@@ -63,11 +62,10 @@ export default function Layout({ children, home }) {
                   width={108}
                   alt={name}
                 />
-              </a>
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <span className={utilStyles.colorInherit}>{name}</span>
               </Link>
             </h2>
           </>
@@ -77,7 +75,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            ← Back to home
           </Link>
         </div>
       )}
