@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "../../../../components/layout.module.css"
+import { getAllPostIds } from '../../../../lib/posts'
 
 const CssCheckpoint = () => {
   return (
@@ -14,3 +15,10 @@ const CssCheckpoint = () => {
 }
 
 export default CssCheckpoint
+
+export async function generateStaticParams() {
+  const paths = getAllPostIds();
+  console.log("path",paths);
+  
+  return paths.map((path) => ({ id: path.params.id }));
+}

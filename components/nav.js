@@ -33,7 +33,7 @@ export const Nav = ({ styles, onClick }) => {
 
             <div className={styles.navBox}>
                 <h4 onClick={onClick} className={styles.navList}>Contact</h4>
-                <Link href="/author/author">
+                <Link href="/author">
                     <h4 className={styles.navList}>Author</h4>
                 </Link>
             </div>

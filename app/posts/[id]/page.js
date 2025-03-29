@@ -1,9 +1,8 @@
 import Date from "../../../components/date";
-import Layout from "../../../components/layout";
 import { getAllPostIds, getPostData } from "../../../lib/posts";
 import Head from "next/head";
 import utilStyles from "../../../styles/utils.module.css";
-import { useRouter } from "next/router";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 
 import ChapterTwo from "../../../components/ChapterTwo";
@@ -12,11 +11,22 @@ import ChapterFour from "../../../components/ChapterFour";
 import ChapterFive from "../../../components/ChapterFive";
 import ChapterEight from "../../../components/ChapterEight";
 
-export default function Post({ postData }) {
-  const router = useRouter();
-  const currentPath = router.asPath.split("/")[2];
+export async function generateStaticParams() {
+  const paths = getAllPostIds(); // Fetch paths
+
+  return paths.map((path) => ({
+    id: path.params.id.replace(/\s/g, "-"), // Replace spaces with hyphens
+  }));
+}
+
+
+export default async function Post({ params }) {
+  const {id} = await params;
+  
+  const postData = await getPostData(id);
+  if (!postData) return notFound(); // Handle invalid paths
   return (
-    <Layout>
+    <>
       <Head>
         <title>{postData.title}</title>
 
@@ -50,7 +60,7 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      {currentPath === "Chapter-1-Web-Development-Presentation" && (
+      {id === "Chapter-1-Web-Development-Presentation" && (
         <p>
           Here is a pdf presentation of web development :{" "}
           <Link href="/webDevPresentation.pdf" download>
@@ -58,31 +68,13 @@ export default function Post({ postData }) {
           </Link>
         </p>
       )}
-      {currentPath === "Chapter-2-git-checkpoint" && (
+      {id === "Chapter-2-git-checkpoint" && (
         <ChapterTwo title={postData.title} />
       )}
-      {currentPath === "Chapter-3-HTML" && <ChapterThree />}
-      {currentPath === "Chapter-4-CSS" && <ChapterFour />}
-      {currentPath === "Chapter-5-CSS-Layout" && <ChapterFive />}
-      {currentPath === "Chapter-8-Algorithms" && <ChapterEight />}
-    </Layout>
+      {id === "Chapter-3-HTML" && <ChapterThree />}
+      {id === "Chapter-4-CSS" && <ChapterFour />}
+      {id === "Chapter-5-CSS-Layout" && <ChapterFive />}
+      {id === "Chapter-8-Algorithms" && <ChapterEight />}
+    </>
   );
-}
-
-export async function getStaticPaths() {
-  const paths = getAllPostIds();
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({ params }) {
-  // Add the "await" keyword like this:
-  const postData = await getPostData(params.id);
-  return {
-    props: {
-      postData,
-    },
-  };
 }

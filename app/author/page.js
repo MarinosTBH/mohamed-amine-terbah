@@ -5,7 +5,7 @@ import utilStyles from '../../styles/utils.module.css';
 
 export default function Author() {
     return (
-        <Layout author >
+        < >
             <Head>
                     <title>Author</title>
                     <meta name="description" content=" ." />
@@ -42,7 +42,7 @@ export default function Author() {
                     </Link>
                 </div>
             </main>
-        </Layout>
+        </>
 
     )
 };
