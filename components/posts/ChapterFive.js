@@ -1,4 +1,3 @@
-import utilStyles from "../styles/utils.module.css"
 
 const ChapterFive = () => {
 
@@ -910,7 +909,7 @@ const ChapterFive = () => {
                 target="_blank"
                 rel='noopener noreferer'>
                 Source code</a>
-            <h1 className={utilStyles.headingXl}>
+            <h1 className="text-xl">
                 Conclusion
             </h1>
             <ul >
