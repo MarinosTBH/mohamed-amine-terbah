@@ -12,6 +12,8 @@ css to tailwind DONE
     - Still Theme ??? DONE
     - Added pagination for posts
     - New look modal
+
+Shocase Projects 
 Database for posts
 Crawler from the internet
 Newsletter and emailing 
