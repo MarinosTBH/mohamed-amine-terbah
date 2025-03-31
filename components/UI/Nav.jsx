@@ -22,7 +22,7 @@ const Nav = () => {
               className='rounded-2xl bg-white'
               width="60"
               height="60"
-              src={"/thumbnail-mohamed-amine-terbah-marinosTBH-gomycode.svg"}
+              src={"/images/logo.png"}
               name="MarinosTBH"
               alt='thumbnail' />
 

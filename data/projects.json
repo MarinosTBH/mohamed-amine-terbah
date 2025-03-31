@@ -1,0 +1,104 @@
+[
+  {
+    "id": "travago",
+    "title": "Travago - Travel Agency Management",
+    "description": " A SaaS-based PHP application designed for travel agencies, enabling seamless management of bookings, and customer interactions. Deployed on InfinityFree, it leverages MySQL, Apache, and Docker for a robust backend, with a responsive UI built using TailwindCSS.",
+    "imgSrc": "/images/projects/travago/homepage.png",
+    "images": [
+      "/images/projects/travago/homepage.png",
+      "/images/projects/travago/register-as-customer.png",
+      "/images/projects/travago/register-as-company.png",
+      "/images/projects/travago/dashboard.png",
+      "/images/projects/travago/booking-customer.png",
+      "/images/projects/travago/payment.png"
+    ],
+    "href": "https://travago.42web.io",
+    "tags": [
+      "PHP",
+      "MySQL",
+      "Apache",
+      "FTP",
+      "Docker",
+      "TailwindCss"
+    ],
+    "repositoryLinks": [
+      "https://github.com/MarinosTBH/travago-app"
+    ],
+    "createdAt": "2024-03-27"
+  },
+  {
+    "id": "souvenirs",
+    "title": "Souvenirs",
+    "description": " A full-stack MERN application for capturing and sharing personal memories. Users can create, manage, and explore souvenirs with authentication via JWT and OAuth. Hosted on Netlify and Render, it features Redux state management and a clean UI with MaterialUI.",
+    "imgSrc": "/images/projects/souvenirs/homepage.png",
+    "images": [
+      "/images/projects/souvenirs/homepage.png",
+      "/images/projects/souvenirs/login.png"
+    ],
+    "href": "https://souvenirsappproject.netlify.app/",
+    "tags": [
+      "React",
+      "Express",
+      "MongoDB",
+      "REST",
+      "Redux",
+      "MaterialUI",
+      "JWT",
+      "OAUTH"
+    ],
+    "repositoryLinks": [
+      "https://github.com/MarinosTBH/Souvenirs_MERN_Client",
+      "https://github.com/MarinosTBH/Api-Souvernis"
+    ],
+    "createdAt": "2022-07-17"
+  },
+  {
+    "id": "blog",
+    "title": "My Personal Blog",
+    "description": " A Next.js-powered personal blog, offering server-side rendering (SSR) for fast and dynamic content delivery. Integrated with Vercel Analytics, Google Tag Manager, and consent management for privacy compliance. Deployed on Vercel with a sleek UI built using TailwindCSS and HeadlessUI.",
+    "imgSrc": "/images/blog/home.png",
+    "images": [
+      "/images/projects/blog/home.png",
+      "/images/projects/blog/abhout.png",
+      "/images/projects/blog/post.png"
+    ],
+    "href": "https://m-a-t.me/",
+    "tags": [
+      "NextJs",
+      "SSR",
+      "Markdown",
+      "HeadlessUI",
+      "TailwindCSS",
+      "Vercel Analytics",
+      "Google Tag Manager",
+      "Consent"
+    ],
+    "repositoryLinks": [],
+    "createdAt": "2022-07-30"
+  },
+  {
+    "id": "coinvert",
+    "title": "CoinVert - Android App",
+    "description": " A feature-rich Android application for real-time currency conversion and comparison. Built in Java with Gradle, it fetches up-to-date exchange rates via Exchange API. The app offers authentication, user profiles, and settings for a customizable experience.",
+    "imgSrc": "/images/projects/coinvert/currency-converter.jpeg",
+    "images": [
+      "/images/projects/coinvert/login.jpeg",
+      "/images/projects/coinvert/register.jpeg",
+      "/images/projects/coinvert/currency-converter.jpeg",
+      "/images/projects/coinvert/compare-currencies.jpeg",
+      "/images/projects/coinvert/profile.jpeg",
+      "/images/projects/coinvert/settings.png"
+    ],
+    "href": null,
+    "tags": [
+      "Android",
+      "Java",
+      "Gradle",
+      "Api"
+    ],
+    "repositoryLinks": [
+      "https://github.com/MarinosTBH/CoinVert"
+    ],
+    "createdAt": "2022-07-17"
+  }
+]

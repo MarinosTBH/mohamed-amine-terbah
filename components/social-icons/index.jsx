@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
     Mail,
     Github,
@@ -34,7 +35,8 @@ import {
 //     size?: number
 //   }
   
-  const SocialIcon = ({ kind, href, size = 8 }) => {
+  const 
+  SocialIcon = ({ kind, href, size = 8 }) => {
     if (
       !href ||
       (kind === 'mail' && !/^mailto:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(href))
@@ -44,7 +46,7 @@ import {
     const SocialSvg = components[kind]
   
     return (
-      <a
+      <Link
         className="text-sm text-gray-500 transition hover:text-gray-600"
         target="_blank"
         rel="noopener noreferrer"
@@ -54,7 +56,7 @@ import {
         <SocialSvg
           className={`hover:text-primary-500 dark:hover:text-primary-400 fill-current text-gray-700 dark:text-gray-200 h-${size} w-${size}`}
         />
-      </a>
+      </Link>
     )
   }
   
