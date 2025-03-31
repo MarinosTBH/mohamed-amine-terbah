@@ -3,6 +3,7 @@ import siteMetadata from '../data/site-metadata';
 import Post from '../components/UI/Post';
 import PostPagination from '../components/UI/PostPagination';
 import NewLook from '../components/UI/NewLook';
+import NewsletterForm from 'pliny/ui/NewsletterForm'
 
 const POSTS_PER_PAGE = 5;
 
@@ -29,6 +30,11 @@ export default async function Home({ searchParams }) {
       </ul>
       <hr></hr>
       <PostPagination page={page} totalPages={totalPages} />
+      {siteMetadata.newsletter?.provider && (
+        <div className="flex border items-center justify-center pt-4">
+          <NewsletterForm />
+        </div>
+      )}
     </section>
   )
 }

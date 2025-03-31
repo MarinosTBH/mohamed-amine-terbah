@@ -1,5 +1,4 @@
 import { getPaginatedPosts, getSortedPostsData } from '../../../lib/posts';
-import Link from 'next/link';
 import siteMetadata from '../../../data/site-metadata';
 import Post from '../../../components/UI/Post';
 import PostPagination from '../../../components/UI/PostPagination';

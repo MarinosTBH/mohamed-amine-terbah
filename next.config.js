@@ -1,3 +1,5 @@
+const withFlowbiteReact = require("flowbite-react/plugin/nextjs");
+
 /**
  * @type {import('next').NextConfig}
  */
@@ -19,4 +21,4 @@ const nextConfig = {
   // distDir: 'dist',
 }
 
-module.exports = nextConfig
+module.exports = withFlowbiteReact(nextConfig)

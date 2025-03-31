@@ -33,8 +33,8 @@ const ChapterTwo = ({ title }) => {
                 <li>- Now let's commit again but using the --amend flag which will save our changes into the last commit (so it will not create a new commit)</li>
                 <CodeBlock message={"git commit --amend"} />
             </ul>
-            <Image priority src={`/Chapter2/1.png`} alt={title} width="687" height="730" />
-            <Image priority src={`/Chapter2/3.png`} alt={title} width="687" height="730" />
+            <Image src={`/Chapter2/1.png`} alt={title} width="687" height="730" />
+            <Image src={`/Chapter2/3.png`} alt={title} width="687" height="730" />
             <p>- That's it, you are ready now to push your job into a remote git repository </p>
             <p>- But before, you need to go to {' '}
                 <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">Github</a>          </p>

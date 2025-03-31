@@ -2,27 +2,34 @@
 import { useState, useEffect } from "react";
 
 export default function NewLook() {
-  const [isOpen, setIsOpen] = useState(false); // Initially, modal is closed
+  const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false); // Separate state for transition
 
-  // Show modal after 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsOpen(true); // Open the modal after 3 seconds
-    }, 3000); // 3000ms = 3 seconds
+      setIsVisible(true); // Make it visible first
+      setTimeout(() => setIsOpen(true), 50); // Delay opening for transition
+    }, 3000);
 
-    // Cleanup the timer if the component unmounts
     return () => clearTimeout(timer);
-  }, []); // Empty dependency array ensures this runs only once when the component mounts
+  }, []);
 
-  const closeModal = () => setIsOpen(false);
+  const closeModal = () => {
+    setIsOpen(false); // Slide out
+    setTimeout(() => setIsVisible(false), 300); // Hide after animation
+  };
 
   return (
     <>
-      {/* Modal Background */}
-      {isOpen && (
-        <div className="fixed m-2 lg:w-1/5 top-25 right-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+      {isVisible && (
+        <div
+          className={`fixed my-2 lg:w-1/5 top-20 right-0 bg-gray-900 bg-opacity-50 flex items-center rounded-l-xl justify-center z-50 
+          transform transition-transform duration-500 ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
           {/* Modal Content */}
-          <div className="bg-gradient-to-br from-blue-400 via-indigo-500 to-purple-600 px-4 py-2 rounded-t-xl rounded-l-xl shadow-xl max-w-lg mx-auto relative">
+          <div className="bg-gradient-to-br from-blue-400 via-indigo-500 to-purple-600 px-4 py-2 rounded-l-xl shadow-xl max-w-lg mx-auto relative">
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-white hover:text-gray-200 focus:outline-none"
@@ -43,7 +50,9 @@ export default function NewLook() {
               </svg>
             </button>
             <div className="text-left text-white w-[95%]">
-              <h2 className="text-sm lg:text-base font-semibold ">🚀 We've given our website a fresh new design, What do you think about our new look!</h2>
+              <h2 className="text-sm lg:text-base font-semibold">
+                🚀 We've given our website a fresh new design, What do you think about our new look!
+              </h2>
             </div>
           </div>
         </div>

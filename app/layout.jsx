@@ -62,16 +62,16 @@ export default function RootLayout({ children }) {
             suppressHydrationWarning
         >
             {/* ✅ Iubenda Cookie Consent */}
-            <Script id="iubenda-init" strategy="lazyOnload">
+            <Script id="iubenda-init" strategy="afterInteractive">
                 {`
                 var _iub = _iub || [];
                 _iub.csConfiguration = {"siteId":3981063,"cookiePolicyId":37912135,"lang":"en","storage":{"useSiteId":true}};
 
                 `}
             </Script>
-            <Script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3981063.js" strategy="lazyOnload" />
-            <Script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js" strategy="lazyOnload" />
-            <Script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async strategy="lazyOnload" />
+            <Script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3981063.js" strategy="afterInteractive" />
+            <Script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js" strategy="afterInteractive" />
+            <Script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async strategy="afterInteractive" />
 
             {/* Google Tag Manager */}
             <Script id="gtm-script" strategy="lazyOnload">
